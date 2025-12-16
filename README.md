@@ -2,7 +2,9 @@
 
 **Author:** Sanjay Kumar Chhetri  
 **Date:** December 16, 2025  
-**Project:** Misinformation Detection using Natural Language Processing
+**Project:** Misinformation Detection using Natural Language Processing  
+**Context:** Springboard Data Science Career Track Capstone Project  
+**Context:** Springboard Data Science Career Track Capstone Project
 
 ---
 
@@ -26,17 +28,23 @@
 
 ## 🎯 Overview
 
-This project implements a comprehensive machine learning pipeline for detecting misinformation and fake news using Natural Language Processing (NLP) techniques. The analysis follows data science best practices and is grounded in established research methodologies from the academic literature on fake news detection.
+This project implements an end-to-end **Natural Language Processing (NLP)** and **Machine Learning** pipeline to detect misinformation in online news articles. Using the **FakeNewsNet** dataset, the analysis explores linguistic and structural differences between *fake* and *real* news and evaluates multiple supervised learning models for predictive performance.
+
+The project emphasizes:
+- Rigorous **exploratory data analysis (EDA)** with statistical validation
+- **Data-driven feature selection** with clear justification
+- Interpretable machine learning models
+- Responsible discussion of **ethical limitations** in automated misinformation detection
 
 **Primary Research Question:**  
-*"How do linguistic and structural properties of news articles differ between fake and real news?"*
+*"How do linguistic and structural properties of news articles differ between fake and real news, and how effectively can these differences be leveraged for automated detection?"*
 
 ### Project Objectives
-1. **Systematic Feature Exploration** - Investigate linguistic patterns using statistical analysis
-2. **Statistical Validation** - Apply inferential statistics (t-tests, Mann-Whitney U, Chi-square)
-3. **Feature Engineering** - Create TF-IDF features with n-grams for text representation
+1. **Systematic Feature Exploration** - Investigate all potential modeling features with appropriate visualizations
+2. **Statistical Validation** - Apply inferential statistics (t-tests, Mann-Whitney U, Chi-square) with effect sizes
+3. **Feature Engineering** - Create TF-IDF features informed by EDA and literature
 4. **Model Development** - Build and compare multiple classification algorithms
-5. **Interpretability** - Analyze feature importance to understand model decisions
+5. **Interpretability** - Analyze feature importance and model decisions
 
 ---
 
@@ -186,6 +194,10 @@ jupyter notebook misinformation_analysis.ipynb
 
 **Winner:** Logistic Regression (best ROC-AUC and overall balance)
 
+### 💡 Key Insight
+
+**Logistic Regression performs competitively despite its simplicity.** Linear models are well-suited to sparse TF-IDF representations and benefit from regularization in high-dimensional text spaces. This demonstrates that simpler, well-justified models can achieve robust performance when paired with strong EDA and feature engineering.
+
 ### Key Findings
 
 #### Top Predictive Features for Fake News:
@@ -297,6 +309,10 @@ Full references available in the notebook's References section.
 ✅ Explicit documentation of limitations  
 ✅ Emphasis on human-AI collaboration  
 
+### 🎯 Recommendation
+
+These models should be used as **decision-support tools**, not as autonomous fact-checkers. Human oversight remains essential for responsible deployment in misinformation detection systems.  
+
 ---
 
 ## 🚀 Future Work
@@ -342,6 +358,26 @@ Full references available in the notebook's References section.
 5. Lazer, D. M., et al. (2018). The science of fake news. *Science, 359*(6380), 1094-1096.
 
 **Complete bibliography available in the notebook.**
+
+---
+
+## 🛠️ Tools & Technologies
+
+**Core Stack:**
+- Python 3.8+
+- pandas, NumPy (data manipulation)
+- scikit-learn (machine learning)
+- NLTK (text processing)
+- matplotlib, seaborn (visualization)
+- scipy (statistical testing)
+- Jupyter Notebook (reproducible analysis)
+
+**Key Techniques:**
+- TF-IDF vectorization
+- Stratified train-test splitting
+- Cross-validation
+- Statistical hypothesis testing
+- Feature importance analysis
 
 ---
 
